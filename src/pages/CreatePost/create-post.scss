@@ -1,0 +1,29 @@
+.theme-card {
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+  background-color: white;
+}
+
+.post-card{
+  position: relative;
+
+  padding: 30px;
+  .form-label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgba(0,0,0,0.5);
+  }
+}
+
+.post-title{
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: rgba(0,0,0,0.7);
+}
+
+.post-sub-section{
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(0,0,0,0.6);
+}

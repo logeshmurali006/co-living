@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.app-logo {
+  font-weight: bold;
+  font-size: 40px;
+  pointer-events: none;
+}
+
+$theme-color: #7472E0;
+
+.theme-color{
+  color: $theme-color;
+}
+
+.bg-theme{
+  background-color: $theme-color !important;
+}
+
+.font-weight-bold{
+  font-weight: bold;;
+}
+
+
+.background-color{
+  background-color:  $theme-color;
+  border-radius: 0px 0px 20px 20px;
+  height: 40vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.page-background{
+    height: 10vh;
+  }
+}
+
+
+
+.theme-card {
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+  background-color: white;
+}
+
+
+
+.login-card{
+  position: relative;
+  margin-top: -10vh;
+  padding: 30px;
+  .form-label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgba(0,0,0,0.5);
+  }
+}
+
+.home-card{
+  @extend .login-card;
+  margin-top: 20px;
+  padding: 25px 25px;
+}
+
+.btn-theme{
+  background-color:  $theme-color !important;
+  color:white !important;
+}
+
+.btn-block{
+  display: block;
+  width: 100%;
+}
+
+.login-title{
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: rgba(0,0,0,0.7);
+}
+
+.home-title{
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: rgba(0,0,0,0.6);
+}
+
+.page-title{
+  font-size: 25px;
+}
+
+.results-card {
+  padding: 10px;
+
+  .results-img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .content-section{
+    padding: 15px 10px;
+    h3{
+      font-size: 17px;
+    }
+    p{
+      color: rgba(0,0,0,0.6);
+    }
+  }
+  
+}
+
+
+.menu-bar{
+  background-color: white;
+  z-index: 1;
+  left: 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  padding: 20px 30px;
+  border-radius: 30px 20px 0px 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+  
+  ul {
+     padding-left: 0px;
+     margin-bottom: 0px;
+     list-style: none;
+     display: flex;
+     font-size: 20px;
+     justify-content: space-between;
+    
+     li{
+        color: rgba(0,0,0,0.5);
+      &.active{
+        color: $theme-color;
+      }
+     }
+  }
+}
+
+.custom-modal{
+  .modal-content{
+    border-radius: 15px;
+
+    .modal-header{
+      border: none;
+      .btn-close{
+        font-size: 14px;
+      }
+      .modal-title {
+        color: rgba(0,0,0,0.7);
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.notification-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+  background-color: white;
+  margin: 15px;
+  border-radius: 20px;
+  padding: 20px 15px;
+  position: relative;
+  .notification-icon{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 15px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    color: $theme-color;
+    background-color: rgba($theme-color,0.1);
+  }
+
+  .notification-content{
+    color: rgba(0,0,0,0.6);
+    padding-left: 75px;
+  }
+}
+
+.post-details-image-wrapper{
+  position: relative;
+  z-index: 1;
+  .overlay{
+    height: 45vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    top: 0px;
+  }
+
+  .post-details-image {
+    height: 45vh;
+    object-fit: cover;
+    
+  }
+}
+
+.post-details-content-wrapper{
+  border-radius: 30px;
+  margin-top: -60px;
+  background-color: white;
+  min-height: 100px;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+
+
+
+
+
+// Profile page
+.profile-tabs {
+
+  .nav-pills {
+    display: flex !important;
+    .nav-item {
+      flex-grow: 1;
+      text-align: center;
+      margin: 0px 5px;
+      width: 110px;
+      .nav-link{
+        color: $theme-color;
+        text-wrap: nowrap;
+        font-size: 15px;
+        background-color: white;
+        // border: 1px solid $theme-color;
+        &.active{
+          background-color: rgba($theme-color,0.1);
+          color: $theme-color;
+          font-weight: 500;
+          border: rgba($theme-color,0.2);
+        }
+    
+      }
+    }
+     
+  } 
+}
+
+
+.user-icon{
+
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  position: relative;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: $theme-color;
+  background-color: rgba($theme-color,0.1);
+}
+
+
+.profile-name{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+// .profile-list{
+//   list-style: none;
+//   border: 1px solid #ddd;
+//   border-radius: 15px;
+//   padding: 10px 15px;
+//   margin-bottom: 0px;
+//   font-size: 14px;
+//   li{
+//     padding: 10px;
+//     &:not(:last-child){
+//       border-bottom: 1px solid #ddd;
+//     }
+//   }
+// }
+
+.text-mutted{
+  color: #ddd;
+}
+
+.back-icon{
+  left: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  top: 24px;
+  color: white;
+  z-index: 1;
+}
+
+
+
+.post-details-image-wrapper{
+  position: relative;
+  z-index: 1;
+  .overlay{
+    height: 45vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    top: 0px;
+  }
+
+  .post-details-image {
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+    
+  }
+}
+
+.post-details-content-wrapper{
+  border-radius: 20px;
+  margin-top: -60px;
+  background-color: white;
+  min-height: 100px;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.post-details-amenities{
+  background: rgba(245, 246, 249, 1);
+  border-radius: 10px;
+  padding: 10px;
+
+}
+.chip {
+  display: inline-block;
+  background-color: white; /* Change the background color as needed */
+  // color: white;
+  padding: 5px 10px;
+  border-radius: 20px; 
+  height: 40px;
+  width: 40px;
+  padding: 9px;
+  text-align: center;
+  // margin-right: 5px; 
+}
+.amenities-items{
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+  ul{
+    padding-left: 0px;
+    list-style: none;
+    margin-bottom: 0px;
+    li{
+      p{
+        display: inline-block;
+      }
+    }
+  }
+}
+.post-details-preferences{
+  padding-top: 10px;
+}
+
+.post-details-contact-details{
+  display: flex;
+}
+.map{
+  padding: 5px;
+}
+
+
+.loading{
+  background-color: rgba(255,255,255,0.9);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: $theme-color;
+  z-index: 11;
+}
